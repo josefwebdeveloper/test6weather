@@ -1,0 +1,29 @@
+.card-container{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  .title{
+    background-color: rgba(0,0,0,.03);
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    height: 38px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+  .selector-container{
+    width: 100%;
+  }
+  .weather-card-container{
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

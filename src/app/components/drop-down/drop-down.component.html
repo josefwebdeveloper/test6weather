@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="dropdown">
+    <button class="btn light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+            aria-expanded="false">
+      {{selectedCity ? selectedCity.name : 'Choose City'}}
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <li *ngFor="let city of cities">
+        <button (click)="onChangeCity(city)" class="dropdown-item" type="button">{{city.name}}
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div (click)="update()" class="submit-button">
+    <button type="button" class="btn btn-light">Submit</button>
+  </div>
+</div>

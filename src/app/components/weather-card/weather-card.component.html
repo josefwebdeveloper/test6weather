@@ -1,0 +1,19 @@
+<div *ngIf="weather" class="main">
+  <div class="title">{{weather.name}}</div>
+
+  <div class="body">
+    <div class="icon">
+      <img [src]="url" />
+    </div>
+    <div class="right-part">
+      <div class="temperature" >{{weather.main.temp}}</div>
+      <div class="description">{{weather.weather[0].main}}</div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="humidity">humidity: {{weather.main.humidity}}</div>
+    <div class="air-pressure">air-pressure:
+      {{weather.main.pressure}}
+    </div>
+  </div>
+</div>
