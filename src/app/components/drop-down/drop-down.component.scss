@@ -1,6 +1,72 @@
-.wrapper{
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
+
+  .dropdown {
+    border: 1px solid #adb5bd;
+    border-radius: 3px;
+
+    .dropdown-toggle {
+      font-size: 12px;
+    }
+  }
+}
+
+.update-container {
+  padding:       5px;
+  color:         #666666;
+  display:       inline-block;
+  font:          normal bold 26px/1 "Ubuntu", sans-serif;
+  text-align:    center;
+  background: #999;
+  position: relative;
+  overflow: hidden;
+  border: #999 solid 1px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 0 0 1px #fff inset;
+  transition-duration: 0.4s;
+  .update {
+    background: rgb(204, 204, 204);
+    background: linear-gradient(0deg, rgba(204, 204, 204, 1) 0%, rgba(102, 102, 102, 1) 0%, rgba(204, 204, 204, 1) 54%);
+    border: 2px solid #666666;
+    border-radius: 11px;
+    box-shadow: 0 2px #999999;
+    padding: 20px 5px;
+    color: #666666;
+    font: normal bold 26px/1 "Ubuntu", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    letter-spacing: -2px;
+
+    .star {
+      width: 24px;
+      margin: 0 10px;
+    }
+  }
+}
+.update-container:hover{
+  cursor: pointer;
+}
+.update-container:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.update-container:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
