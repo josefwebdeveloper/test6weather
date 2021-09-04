@@ -1,7 +1,7 @@
 export const citiesData=[
   {
     "id": 707860,
-    "name": "Moscow",
+    "name": "Hurzuf",
     "country": "UA",
     "coord": {
       "lon": 34.283333,

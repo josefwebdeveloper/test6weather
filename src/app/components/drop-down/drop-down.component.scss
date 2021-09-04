@@ -1,3 +1,10 @@
+::-webkit-scrollbar {
+  width: 3px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -10,6 +17,10 @@
 
     .dropdown-toggle {
       font-size: 12px;
+    }
+    .dropdown-menu{
+      max-height: 500px;
+      overflow-y: scroll;
     }
   }
 }
@@ -48,7 +59,7 @@
     }
   }
 }
-.update-container:hover{
+.update-container:not(.disabled):hover{
   cursor: pointer;
 }
 .update-container:after {

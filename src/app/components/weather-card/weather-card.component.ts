@@ -3,6 +3,7 @@ import {DataService} from "../../services/data.service";
 import {Observable, Subscription} from "rxjs";
 import {City} from "../../models/cities";
 import {ApiService} from "../../services/api.service";
+import {WeatherResponse} from "../../models/weatherResponceInterface";
 
 @Component({
   selector: 'app-weather-card',
@@ -12,7 +13,7 @@ import {ApiService} from "../../services/api.service";
 export class WeatherCardComponent implements OnInit, OnDestroy {
   city: City | null= null
   citySub:Subscription;
-  weather:any
+  weather: WeatherResponse | undefined
   url:string='';
   constructor(private dataService: DataService,
               private apiService:ApiService) {
